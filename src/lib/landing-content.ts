@@ -8,13 +8,13 @@
  */
 
 export const SITE = {
-  productName: "[NOME_DO_PRODUTO]",
-  productSubtitle: "[SUBTITULO_DO_PRODUTO]",
+  productName: "LICITAGÖES EM FOCO",
+  productSubtitle: "LICITAGÖES EM FOCO",
   checkoutUrl: "[LINK_CHECKOUT_EDUZZ]",
-  whatsappNumber: "[WHATSAPP_SUPORTE]", // ex: 5511999999999 (formato internacional, só números)
+  whatsappNumber: "5554996134928", // ex: 5511999999999 (formato internacional, só números)
   whatsappMessage: "Olá! Tenho uma dúvida sobre o curso de licitações.",
-  priceFull: "[PRECO_A_VISTA]",        // ex: "R$ 497"
-  priceInstallment: "[PRECO_PARCELADO]", // ex: "12x de R$ 49,70"
+  priceFull: "$R$ 497",        // ex: "R$ 497"
+  priceInstallment: "12x de R$ 49,70", // ex: "12x de R$ 49,70"
   priceFrom: "De R$ 1.297",
   guaranteeDays: 7,
 };
