@@ -20,12 +20,12 @@ export const SITE = {
 };
 
 export const HERO = {
-  eyebrow: "Método prático para licitações públicas",
+  eyebrow: "Milhões são comprados todos os dias pelo governo.",
   headline:
-    "Domine licitações e contratos públicos e transforme o governo no seu maior cliente.",
+    "Você pode estar perdendo licitações antes mesmo do pregão começar.",
   sub:
-    "Aprenda, do zero, a interpretar editais, precificar com segurança e participar de processos licitatórios sem travar no caminho jurídico.",
-  microcopy: "Acesso imediato • Suporte por WhatsApp • Garantia de 7 dias",
+    "Pequenos erros em documentos, propostas e interpretação do edital eliminam empresas todos os dias. Descubra o que realmente faz diferença.",
+  microcopy: "Acesso imediato • Suporte por WhatsApp • Aprenda com quem já esteve do outro lado do pregão",
   primaryCta: "Quero garantir minha vaga",
   secondaryCta: "Ver detalhes da oferta",
 };
