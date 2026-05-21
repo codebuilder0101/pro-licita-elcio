@@ -411,14 +411,14 @@ E começa a chegar preparado"
               <span className="inline-block h-px w-6 bg-[var(--gold)]" /> Quem te ensina
             </div>
             <h2 className="font-display text-3xl font-medium leading-tight md:text-5xl">
-              Mais de uma década de mercado público, traduzido em método.
+              Aprenda a transformar licitações em oportunidades reais de faturamento
             </h2>
             <p className="mt-5 max-w-xl text-white/70">
-              [Especialista placeholder] atua há mais de 10 anos com licitações e contratos públicos, assessorando empresas de diferentes portes a venderem para órgãos federais, estaduais e municipais.
+              Ex-pregoeiro e assessor especialista com mais de 12 anos de experiência ajudando empresas a interpretar editais, evitar erros e entrar no mercado público com mais segurança
             </p>
             <ul className="mt-7 grid gap-3 sm:grid-cols-2">
               {[
-                "10+ anos de experiência prática",
+                "12+ anos de experiência prática",
                 "Centenas de editais analisados",
                 "Mentoria a empresas de todo o Brasil",
                 "Foco em método replicável",
