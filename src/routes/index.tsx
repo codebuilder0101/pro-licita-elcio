@@ -130,7 +130,7 @@ function LandingPage() {
             <img
               src="/logo.jpeg"
               alt={SITE.productName}
-              className="h-9 w-auto md:h-10"
+              className="h-14 w-auto md:h-16"
               loading="eager"
             />
           </a>
