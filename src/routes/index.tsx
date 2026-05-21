@@ -21,7 +21,7 @@ import {
   PAINS,
   MODULES,
   BENEFITS,
-  BONUSES,
+  BONUS,
   TESTIMONIALS,
   FAQ,
 } from "@/lib/landing-content";
@@ -351,42 +351,61 @@ E começa a chegar preparado"
       {/* ============ BONUSES ============ */}
       <Section className="bg-white">
         <SectionHeader
-          eyebrow="Bônus inclusos hoje"
-          title="Tudo o que você recebe junto com o curso."
+          eyebrow={BONUS.sectionEyebrow}
+          title={BONUS.sectionTitle}
         />
-        <div className="grid gap-4 md:grid-cols-2">
-          {BONUSES.map((b, i) => (
-            <article
-              key={b.name}
-              className="relative overflow-hidden rounded-xl border border-black/5 bg-gradient-to-br from-white to-[var(--bone)] p-7"
-            >
-              <div className="flex items-start justify-between gap-4">
-                <div>
-                  <span className="text-xs font-medium uppercase tracking-[0.18em] text-[var(--gold)]">
-                    Bônus 0{i + 1}
+        <article className="mx-auto max-w-4xl overflow-hidden rounded-2xl border border-black/5 bg-gradient-to-br from-white to-[var(--bone)] shadow-[0_30px_80px_-50px_rgba(15,23,42,0.35)]">
+          <div className="flex flex-col gap-4 border-b border-black/5 bg-[var(--navy-deep)] px-7 py-6 md:flex-row md:items-center md:justify-between">
+            <div>
+              <span className="text-xs font-medium uppercase tracking-[0.2em] text-[var(--gold)]">
+                {BONUS.badge}
+              </span>
+              <h3 className="mt-1 font-display text-xl text-white md:text-2xl">
+                {BONUS.title}
+              </h3>
+              <p className="mt-1 text-sm text-white/70">{BONUS.tagline}</p>
+            </div>
+            <div className="flex shrink-0 items-center gap-3 rounded-lg border border-white/10 bg-white/[0.04] px-4 py-3">
+              <div>
+                <div className="text-[10px] uppercase tracking-[0.18em] text-white/50">Valor</div>
+                <div className="font-display text-xl text-white">{BONUS.value}</div>
+              </div>
+              <div className="h-8 w-px bg-white/10" />
+              <div className="inline-flex items-center gap-1.5 text-xs font-medium text-[var(--emerald-accent)]">
+                <Check className="size-3.5" /> {BONUS.valueLabel}
+              </div>
+            </div>
+          </div>
+
+          <div className="px-7 py-8">
+            <p className="text-[15px] leading-relaxed text-[var(--graphite)]">
+              {BONUS.intro}
+            </p>
+            <ul className="mt-6 grid gap-4 md:grid-cols-2">
+              {BONUS.features.map((f) => (
+                <li
+                  key={f.title}
+                  className="flex gap-3 rounded-xl border border-black/5 bg-white p-4"
+                >
+                  <span className="text-2xl leading-none" aria-hidden>
+                    {f.icon}
                   </span>
-                  <h3 className="mt-2 text-lg font-semibold text-[var(--navy-deep)]">
-                    {b.name.replace(/^Bônus \d+ — /, "")}
-                  </h3>
-                  <p className="mt-2 text-sm leading-relaxed text-[var(--graphite)]">
-                    {b.desc}
-                  </p>
-                </div>
-                <div className="text-right">
-                  <div className="text-[10px] uppercase tracking-[0.16em] text-[var(--graphite)]/60">Valor</div>
-                  <div className="font-display text-lg text-[var(--navy-deep)]">{b.value}</div>
-                </div>
-              </div>
-              <div className="mt-5 inline-flex items-center gap-1.5 text-xs font-medium text-[var(--emerald-accent)]">
-                <Check className="size-3.5" /> Incluso hoje
-              </div>
-            </article>
-          ))}
-        </div>
-        <div className="mt-12 flex flex-col items-center gap-2 text-center">
-          <p className="text-sm text-[var(--graphite)]">Garanta o curso + todos os bônus pela condição atual.</p>
-          <CtaButton>Quero acessar com os bônus</CtaButton>
-        </div>
+                  <div>
+                    <div className="text-[15px] font-semibold text-[var(--navy-deep)]">
+                      {f.title}
+                    </div>
+                    <p className="mt-1 text-sm leading-relaxed text-[var(--graphite)]">
+                      {f.desc}
+                    </p>
+                  </div>
+                </li>
+              ))}
+            </ul>
+            <div className="mt-7 rounded-xl bg-[var(--navy-deep)]/[0.04] px-5 py-4 text-center text-[15px] font-medium text-[var(--navy-deep)]">
+              {BONUS.footer}
+            </div>
+          </div>
+        </article>
       </Section>
 
       {/* ============ AUTHORITY ============ */}
@@ -472,7 +491,7 @@ E começa a chegar preparado"
       <Section id="oferta" className="bg-white">
         <SectionHeader
           eyebrow="Sua decisão hoje"
-          title="Acesso completo + bônus, com a melhor condição."
+          title="A oportunidade está aberta: acesso completo + bônus liberados hoje"
         />
         <div className="mx-auto max-w-2xl overflow-hidden rounded-2xl border-2 border-[var(--navy-deep)]/10 bg-gradient-to-b from-white to-[var(--bone)] shadow-[0_30px_80px_-40px_rgba(15,23,42,0.4)]">
           <div className="border-b border-black/5 bg-[var(--navy-deep)] px-7 py-5 text-center">
@@ -487,11 +506,11 @@ E começa a chegar preparado"
           <div className="space-y-5 px-7 py-8">
             <ul className="space-y-3 text-sm text-[var(--graphite)]">
               {[
-                "Acesso vitalício a todos os módulos",
-                "Todos os 4 bônus liberados imediatamente",
-                "Comunidade exclusiva de alunos",
-                "Suporte oficial por WhatsApp",
-                "Atualizações futuras inclusas",
+                "Aprenda a interpretar editais sem travar",
+"Evite erros que eliminam empresas",
+"Acesso vitalício",
+"Suporte direto por WhatsApp",
+"Atualizações futuras incluídas",
               ].map((i) => (
                 <li key={i} className="flex items-start gap-2">
                   <Check className="mt-0.5 size-4 shrink-0 text-[var(--emerald-accent)]" />
@@ -511,36 +530,25 @@ E começa a chegar preparado"
               <p className="mt-1 text-sm text-[var(--graphite)]">
                 ou {SITE.priceFull} à vista
               </p>
+              <p className="mt-3 inline-flex items-center gap-1.5 rounded-full bg-[var(--emerald-accent)]/10 px-3 py-1 text-xs font-medium text-[var(--emerald-accent)]">
+                {SITE.pricePerDay}
+              </p>
             </div>
 
             <CtaButton className="w-full !py-5 text-base">
-              Quero garantir meu acesso agora
+              Quero dominar licitações agora
             </CtaButton>
 
-            <div className="flex flex-wrap items-center justify-center gap-x-5 gap-y-2 text-xs text-[var(--graphite)]/70">
-              <span className="inline-flex items-center gap-1.5"><Lock className="size-3.5" /> Pagamento 100% seguro</span>
-              <span className="inline-flex items-center gap-1.5"><ShieldCheck className="size-3.5" /> {SITE.guaranteeDays} dias de garantia</span>
+            <div className="flex items-start gap-3 rounded-xl border border-[var(--emerald-accent)]/20 bg-[var(--emerald-accent)]/5 px-4 py-3 text-sm leading-relaxed text-[var(--graphite)]">
+              <ShieldCheck className="mt-0.5 size-5 shrink-0 text-[var(--emerald-accent)]" />
+              <p>
+                Você tem uma semana inteira para acessar todo o conteúdo. Se sentir que não é para você, devolvemos 100% do valor — sem perguntas, sem burocracia.
+              </p>
             </div>
           </div>
         </div>
       </Section>
 
-      {/* ============ GUARANTEE ============ */}
-      <Section className="bg-[var(--bone)]">
-        <div className="mx-auto flex max-w-3xl flex-col items-center gap-6 rounded-2xl border border-black/5 bg-white p-10 text-center md:flex-row md:text-left">
-          <div className="grid size-20 shrink-0 place-items-center rounded-full bg-[var(--emerald-accent)]/10 text-[var(--emerald-accent)]">
-            <ShieldCheck className="size-9" />
-          </div>
-          <div>
-            <h3 className="font-display text-2xl text-[var(--navy-deep)]">
-              Garantia incondicional de {SITE.guaranteeDays} dias
-            </h3>
-            <p className="mt-2 text-[var(--graphite)]">
-              Você tem uma semana inteira para acessar todo o conteúdo. Se sentir que não é para você, devolvemos 100% do valor — sem perguntas, sem burocracia.
-            </p>
-          </div>
-        </div>
-      </Section>
 
       {/* ============ FAQ ============ */}
       <Section className="bg-white">
@@ -578,10 +586,10 @@ E começa a chegar preparado"
             Cada edital que passa é uma oportunidade que você deixa na mesa.
           </h2>
           <p className="mt-5 text-white/70">
-            Comece hoje com método, suporte e a garantia de que, se não fizer sentido, seu investimento volta integralmente.
+            O governo compra todos os dias. Enquanto muitas empresas deixam oportunidades passarem por falta de conhecimento, outras aprendem a interpretar editais, evitar erros e entrar no jogo com estratégia
           </p>
           <div className="mt-9 flex justify-center">
-            <CtaButton>Quero acessar agora</CtaButton>
+            <CtaButton>Quero entrar no mercado público agora</CtaButton>
           </div>
         </div>
       </Section>

@@ -9,13 +9,14 @@
 
 export const SITE = {
   productName: "LICITAGÖES EM FOCO",
-  productSubtitle: "LICITAGÖES EM FOCO",
+  productSubtitle: "Método prático para interpretar editais, evitar erros e participar de licitações com mais segurança",
   checkoutUrl: "[LINK_CHECKOUT_EDUZZ]",
   whatsappNumber: "5554996134928", // ex: 5511999999999 (formato internacional, só números)
   whatsappMessage: "Olá! Tenho uma dúvida sobre o curso de licitações.",
-  priceFull: "$R$ 497",        // ex: "R$ 497"
-  priceInstallment: "12x de R$ 49,70", // ex: "12x de R$ 49,70"
-  priceFrom: "De R$ 1.297",
+  priceFull: "R$ 27,90",        // ex: "R$ 497"
+  priceInstallment: "3x de R$ 9,30", // ex: "12x de R$ 49,70"
+  priceFrom: "De R$ 99,70",
+  pricePerDay: "Menos de R$ 0,93 por dia",
   guaranteeDays: 7,
 };
 
@@ -69,12 +70,40 @@ export const BENEFITS = [
 "Aumentar a previsibilidade do faturamento — com contratos públicos de prazo e valor definidos",
 ];
 
-export const BONUSES = [
-  { name: "Bônus 01 — Checklist de habilitação", desc: "Modelo pronto para não esquecer nenhum documento essencial.", value: "R$ 197" },
-  { name: "Bônus 02 — Planilha de precificação", desc: "Calcule rapidamente custo, margem e lance final.", value: "R$ 297" },
-  { name: "Bônus 03 — Modelos de propostas", desc: "Templates profissionais usados em pregões reais.", value: "R$ 247" },
-  { name: "Bônus 04 — Comunidade fechada", desc: "Networking direto com outros participantes do método.", value: "R$ 397" },
-];
+export const BONUS = {
+  sectionEyebrow: "Bônus inclusos hoje",
+  sectionTitle: "Não é só o guia. É tudo que você precisa para chegar preparado.",
+  badge: "Bônus",
+  title: "Acesso à Plataforma Ebrack Licitações",
+  tagline: "O bônus que vale mais que o próprio guia.",
+  intro:
+    "Ao comprar o guia você ganha acesso à plataforma exclusiva Ebrack Licitações, onde você encontra:",
+  features: [
+    {
+      icon: "📄",
+      title: "Modelos prontos de recurso administrativo e contrarrazões",
+      desc: "Editáveis e com fundamentação jurídica.",
+    },
+    {
+      icon: "⚖️",
+      title: "Análises de acórdãos do TCU",
+      desc: "Decisões recentes explicadas na prática para você usar como argumento.",
+    },
+    {
+      icon: "🔔",
+      title: "Novidades do mundo das licitações",
+      desc: "Mudanças na lei, jurisprudência nova e alertas que impactam sua empresa.",
+    },
+    {
+      icon: "💬",
+      title: "Contato direto comigo",
+      desc: "Suporte e dúvidas com quem tem 12 anos de experiência nos bastidores do setor público.",
+    },
+  ],
+  value: "R$ 497",
+  valueLabel: "Incluso hoje",
+  footer: "Você compra o guia e ganha acesso a um especialista.",
+};
 
 export const TESTIMONIALS = [
   {
@@ -120,6 +149,6 @@ export const FAQ = [
   },
   {
     q: "Existe suporte para tirar dúvidas?",
-    a: "Sim. Suporte oficial por WhatsApp e área exclusiva para alunos com tira-dúvidas periódicos.",
+    a: "Sim. Você não ficará sozinho. Suporte oficial por WhatsApp para esclarecer questões e avançar com mais segurança.",
   },
 ];
