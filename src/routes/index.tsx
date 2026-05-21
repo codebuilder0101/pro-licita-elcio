@@ -126,13 +126,13 @@ function LandingPage() {
       {/* ============ NAV ============ */}
       <header className="sticky top-0 z-40 border-b border-black/5 bg-[var(--bone)]/85 backdrop-blur">
         <div className="mx-auto flex max-w-6xl items-center justify-between px-5 py-4 md:px-8">
-          <a href="#top" className="flex items-center gap-2">
-            <span className="grid size-7 place-items-center rounded-sm bg-[var(--navy-deep)] text-[var(--gold)] font-display text-sm font-bold">
-              L
-            </span>
-            <span className="font-display text-sm font-semibold tracking-tight text-[var(--navy-deep)]">
-              {SITE.productName}
-            </span>
+          <a href="#top" className="flex items-center">
+            <img
+              src="/logo.jpeg"
+              alt={SITE.productName}
+              className="h-9 w-auto md:h-10"
+              loading="eager"
+            />
           </a>
           <a
             href={SITE.checkoutUrl}
