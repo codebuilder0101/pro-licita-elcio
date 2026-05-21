@@ -218,9 +218,9 @@ function LandingPage() {
       {/* ============ PAIN POINTS ============ */}
       <Section id="dores" className="bg-[var(--bone)]">
         <SectionHeader
-          eyebrow="Por que tantas empresas desistem"
-          title="Licitação não é falta de oportunidade — é falta de método."
-          intro="Se você se identifica com algum desses cenários, você está no lugar certo."
+          eyebrow="POR QUE TANTAS EMPRESAS SÃO DESCLASSIFICADAS"
+          title="Não é falta de oportunidade. É falta de quem te mostre as regras do jogo por dentro"
+          intro=""
         />
         <div className="grid gap-4 md:grid-cols-2">
           {PAINS.map((p) => (
@@ -234,7 +234,7 @@ function LandingPage() {
           ))}
         </div>
         <div className="mt-12 flex flex-col items-center gap-2 text-center">
-          <p className="text-sm text-[var(--graphite)]">Pare de deixar oportunidades passarem.</p>
+          <p className="text-sm text-[var(--graphite)]">Você não precisa de sorte. Precisa de alguém que conhece o outro lado da mesa</p>
           <CtaButton>Quero o método agora</CtaButton>
         </div>
       </Section>
@@ -245,15 +245,15 @@ function LandingPage() {
           <div className="md:col-span-7">
             <SectionHeader
               eyebrow="A virada de chave"
-              title="O governo é o maior comprador do Brasil. E ele compra todos os dias."
-              intro="Mais de R$ 200 bilhões em contratos públicos são movimentados anualmente. O problema nunca foi escassez de demanda — é falta de um caminho claro para entrar nesse mercado com previsibilidade."
+              title="O governo compra todos os dias. Em todo o Brasil. De empresas de todos os tamanhos"
+              intro="São mais de R$ 200 bilhões em contratos públicos movimentados por ano — e a maior parte vai para empresas que simplesmente aprenderam a participar do processo certo"
               align="left"
             />
             <ul className="space-y-3">
               {[
-                "Demanda contínua e regulada por lei",
-                "Pagamento previsível e contratos longos",
-                "Mercado pouco saturado para quem domina o processo",
+                "Demanda contínua e regulada por lei — o governo não entra em crise de vendas",
+                "Pagamento previsível — contratos com prazo, valor e obrigações definidas",
+                "Mercado ainda pouco saturado para quem domina o processo",
               ].map((t) => (
                 <li key={t} className="flex items-start gap-3 text-[var(--graphite)]">
                   <span className="mt-1 grid size-5 shrink-0 place-items-center rounded-full bg-[var(--emerald-accent)]/10 text-[var(--emerald-accent)]">
@@ -268,11 +268,11 @@ function LandingPage() {
             <div className="rounded-2xl border border-black/5 bg-[var(--navy-deep)] p-8 text-white">
               <Quote className="size-6 text-[var(--gold)]" />
               <p className="mt-4 font-display text-xl leading-snug">
-                “Não é o tamanho da sua empresa que define se você vai vencer um pregão. É o quanto você entende o jogo.”
+                “Não é privilégio. Não é indicação. É método e trabalho.”
               </p>
               <div className="mt-6 h-px bg-white/10" />
               <p className="mt-4 text-xs uppercase tracking-[0.18em] text-white/50">
-                Filosofia do método
+                Elcio Brack, pregoeiro +12 anos, jurídico preventivo
               </p>
             </div>
           </div>
@@ -283,14 +283,14 @@ function LandingPage() {
       <Section className="bg-[var(--bone)]">
         <SectionHeader
           eyebrow="O método"
-          title="Um caminho prático, do edital ao contrato assinado."
-          intro="Conteúdo direto, organizado em módulos curtos e aplicáveis, pensado para quem precisa de resultado — não de teoria."
+          title="O que eu via como pregoeiro — agora você vai saber também"
+          intro="Conteúdo direto, em partes curtas e aplicáveis, criado por quem conduziu centenas de pregões do outro lado da tela"
         />
         <div className="grid gap-4 md:grid-cols-3">
           {[
-            { title: "Direto ao ponto", desc: "Aulas curtas, sem enrolação. Você aplica enquanto aprende." },
-            { title: "Baseado em casos reais", desc: "Editais reais analisados linha a linha, com comentários estratégicos." },
-            { title: "Para qualquer nicho", desc: "Serve para produtos, serviços, obras, TI, alimentação, locação e mais." },
+            { title: "Direto ao ponto", desc: "Páginas curtas e sem enrolação. Você aplica no próximo edital enquanto ainda está aprendendo" },
+            { title: "Visão de dentro", desc: "Editais reais analisados com o olhar de quem os conduziu — não de quem apenas os estudou" },
+            { title: "Para qualquer segmento", desc: "Produtos, serviços, obras, TI, alimentação, locação. O método funciona independente do seu nicho" },
           ].map((c) => (
             <div key={c.title} className="rounded-xl border border-black/5 bg-white p-7">
               <h3 className="text-lg font-semibold text-[var(--navy-deep)]">{c.title}</h3>
@@ -299,7 +299,7 @@ function LandingPage() {
           ))}
         </div>
         <div className="mt-12 flex flex-col items-center gap-2 text-center">
-          <p className="text-sm text-[var(--graphite)]">Pronto para aplicar o método na sua empresa?</p>
+          <p className="text-sm text-[var(--graphite)]">Sua próxima licitação pode ser diferente</p>
           <CtaButton>Quero garantir meu acesso</CtaButton>
         </div>
       </Section>
@@ -308,7 +308,7 @@ function LandingPage() {
       <Section className="bg-white">
         <SectionHeader
           eyebrow="Conteúdo programático"
-          title="O que você vai dominar."
+          title="O que você vai aprender — e aplicar na próxima licitação"
         />
         <div className="grid gap-px overflow-hidden rounded-2xl border border-black/5 bg-black/5 md:grid-cols-2">
           {MODULES.map((m) => (
@@ -329,7 +329,8 @@ function LandingPage() {
       <Section className="bg-[var(--bone)]">
         <SectionHeader
           eyebrow="Resultados esperados"
-          title="O que muda na sua empresa depois do método."
+          title="Depois do guia, você para de perder.
+E começa a chegar preparado"
         />
         <ul className="grid gap-x-8 gap-y-5 md:grid-cols-2">
           {BENEFITS.map((b) => (
@@ -342,7 +343,7 @@ function LandingPage() {
           ))}
         </ul>
         <div className="mt-12 flex flex-col items-center gap-2 text-center">
-          <p className="text-sm text-[var(--graphite)]">Esses resultados podem ser os seus.</p>
+          <p className="text-sm text-[var(--graphite)]">Cada um desses resultados está a um guia de distância</p>
           <CtaButton>Quero começar agora</CtaButton>
         </div>
       </Section>

@@ -32,39 +32,41 @@ export const HERO = {
 
 export const PAINS = [
   {
-    title: "Editais que parecem outra língua",
-    desc: "Termos jurídicos, exigências confusas e prazos que assustam quem nunca participou.",
+    title: "📄 Edital parece outra língua",
+    desc: "Termos jurídicos, exigências confusas e prazos que travam quem nunca esteve do outro lado do pregão. Eu já estava — e vou traduzir tudo para você",
   },
   {
-    title: "Medo de errar e ser inabilitado",
-    desc: "Pequenos detalhes técnicos derrubam propostas e fazem você perder tempo e dinheiro.",
+    title: "❌ Medo de ser inabilitado por detalhe",
+    desc: "Um documento vencido, uma certidão errada, uma exigência que você nem sabia que existia. Vi isso acontecer centenas de vezes como pregoeiro. Agora ensino como evitar",
   },
   {
-    title: "Não saber por onde começar",
-    desc: "Você sabe que existe oportunidade, mas falta um caminho claro, passo a passo.",
+    title: "🧭 Não sabe por onde começar",
+    desc: "Você sabe que existe oportunidade — falta um caminho claro, na ordem certa, sem pular etapa",
   },
   {
-    title: "Concorrência despreparada vencendo",
-    desc: "Enquanto você hesita, empresas menos qualificadas fecham contratos públicos relevantes.",
+    title: "😤 Empresa menos qualificada vencendo no seu lugar",
+    desc: "Enquanto você hesita, concorrentes com menos estrutura fecham contratos públicos. A diferença não é capacidade — é método certo",
   },
 ];
 
 export const MODULES = [
-  { n: "01", title: "Fundamentos de licitação", desc: "Como funciona o mercado público, leis e principais modalidades." },
-  { n: "02", title: "Leitura estratégica de editais", desc: "Identifique exigências, riscos e oportunidades em minutos." },
-  { n: "03", title: "Documentação e habilitação", desc: "Monte a sua pasta de documentos sem deixar brechas." },
-  { n: "04", title: "Precificação inteligente", desc: "Como precificar para vencer sem comprometer a margem." },
-  { n: "05", title: "Pregão eletrônico na prática", desc: "Operação no Comprasnet, BLL, Licitações-e e demais portais." },
-  { n: "06", title: "Pós-venda e contratos", desc: "Cumprimento do contrato, aditivos e relacionamento com o órgão." },
+  { n: "01", title: "Ajeitando a casa", desc: "Os documentos que sua empresa precisa ter em dia antes de participar de qualquer licitação. O que os órgãos exigem — e o que derruba quem não se preparou" },
+  { n: "02", title: "Cadastro nos portais", desc: "Como registrar sua empresa no Comprasnet, SICAF e demais plataformas. Passo a passo sem burocracia desnecessária" },
+  { n: "03", title: "Busca das oportunidades", desc: "Como encontrar licitações abertas que fazem sentido para o seu negócio — incluindo as que os buscadores pagos não mostram" },
+  { n: "04", title: "Impugnações", desc: "Como identificar cláusulas ilegais no edital e questionar antes da sessão. A ferramenta preventiva que a maioria das empresas ignora" },
+  { n: "05", title: "Cadastro da licitação no portal", desc: "Como registrar sua proposta corretamente — sem erros que custam a desclassificação na largada" },
+  { n: "06", title: "Participação no pregão", desc: "O que acontece na sessão, como se comportar, como dar lances com estratégia e o que fazer se algo der errado" },
 ];
 
 export const BENEFITS = [
-  "Interpretar qualquer edital com clareza, do início ao fim.",
-  "Evitar os erros que mais inabilitam empresas iniciantes.",
-  "Precificar com margem e ainda assim sair competitivo.",
-  "Participar de pregões eletrônicos com segurança.",
-  "Construir um processo replicável dentro da sua empresa.",
-  "Aumentar a previsibilidade de faturamento com contratos públicos.",
+  "Ler qualquer edital com olhar técnico — identificando armadilhas antes de participar",
+  "Montar sua documentação sem brechas — e nunca mais ser inabilitado por detalhe evitável",
+"Entender o que o pregoeiro observa primeiro — e usar isso a seu favor na sessão",
+"Precificar com margem real — sem vender abaixo do custo para ganhar",
+"Participar de pregões eletrônicos com segurança — nos principais portais do Brasil",
+"Impugnar editais com cláusulas ilegais — antes de ser prejudicado",
+"Construir um processo replicável — para sua empresa participar de múltiplas licitações ao mesmo tempo",
+"Aumentar a previsibilidade do faturamento — com contratos públicos de prazo e valor definidos",
 ];
 
 export const BONUSES = [
