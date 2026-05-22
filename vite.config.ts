@@ -6,10 +6,16 @@
 // You can pass additional config via defineConfig({ vite: { ... } }) if needed.
 import { defineConfig } from "@lovable.dev/vite-tanstack-config";
 
+// Disable the Cloudflare Workers adapter when building on Vercel — its output is
+// not compatible with Vercel's runtime. Vercel sets `VERCEL=1` during builds.
+const isVercelBuild = process.env.VERCEL === "1";
+
 // Redirect TanStack Start's bundled server entry to src/server.ts (our SSR error wrapper).
 // @cloudflare/vite-plugin builds from this — wrangler.jsonc main alone is insufficient.
 export default defineConfig({
+  cloudflare: isVercelBuild ? false : undefined,
   tanstackStart: {
     server: { entry: "server" },
+    pages: [{ path: "/", prerender: { enabled: true } }],
   },
 });
