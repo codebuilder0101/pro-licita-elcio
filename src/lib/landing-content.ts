@@ -10,7 +10,7 @@
 export const SITE = {
   productName: "LICITAGÖES EM FOCO",
   productSubtitle: "Método prático para interpretar editais, evitar erros e participar de licitações com mais segurança",
-  checkoutUrl: "[LINK_CHECKOUT_EDUZZ]",
+  checkoutUrl: "https://chk.eduzz.com/89AX55D60D",
   whatsappNumber: "5554996134928", // ex: 5511999999999 (formato internacional, só números)
   whatsappMessage: "Olá! Tenho uma dúvida sobre o curso de licitações.",
   priceFull: "R$ 27,90",        // ex: "R$ 497"
